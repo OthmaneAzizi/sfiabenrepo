@@ -9,7 +9,11 @@ export default function ImageThumbnail({ isActive, onClick, image }) {
 
   return (
     <ImageThumbnailWrapper onClick={handleClick} isActive={isActive}>
+<<<<<<< HEAD
       <Image fluid={image.localFile?.childImageSharp.fluid} />
+=======
+      <Image fluid={image?.localFile?.childImageSharp?.fluid} />
+>>>>>>> 9937a88f62fd2bb141777619753a58538ffe0222
     </ImageThumbnailWrapper>
   );
 }
