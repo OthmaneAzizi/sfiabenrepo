@@ -21,11 +21,11 @@ export function ImageGallery({ selectedVariantImageId, images }) {
   return (
     <ImageGalleryWrapper>
       <div>
-<<<<<<< HEAD
+
         <Image fluid={activeImageThumbnail.localFile?.childImageSharp.fluid} />
-=======
+
         <Image fluid={activeImageThumbnail?.localFile?.childImageSharp?.fluid} />
->>>>>>> 9937a88f62fd2bb141777619753a58538ffe0222
+
       </div>
       <div>
         {images.map(image => {

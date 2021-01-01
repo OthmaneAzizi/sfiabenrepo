@@ -4,20 +4,17 @@ import { RemainingCollections } from './styles';
 
 export function HomepageCollectionsGrid({ collections }) {
   const saleCollection = collections?.find(
-<<<<<<< HEAD
-    collection => collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MjMzMDU1Nw=='
+
+    collection => collection.title === 'SALE'
   );
   const remainingCollections = collections?.filter(
     collection => collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTgxNzg1MTA2OQ=='
     || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MTIxNjQ0NQ=='
     || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MjUyNzE2NQ=='
-=======
-    collection => collection.title === 'ON SALE'
+   
+
   );
-  const remainingCollections = collections?.filter(
-    collection => collection.title.includes('Hats') && collection.title !== 'Featured Hats'
->>>>>>> 9937a88f62fd2bb141777619753a58538ffe0222
-  );
+
   console.log(remainingCollections);
 
   return (
