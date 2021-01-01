@@ -12,7 +12,7 @@ const WarrantyGuarantees = () => (
     <SEO title="Warranty Guarantees" />
     <h1>Warranty Guarantees</h1>
 <strong>Authentic</strong>
-<p>
+<p>gatsby
     The caps we provide respect high standard of quality ,Our hat collection is entirely tested by our experts
 </p>
 <br/>
