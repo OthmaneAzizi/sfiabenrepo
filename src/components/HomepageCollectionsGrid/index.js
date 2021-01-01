@@ -4,14 +4,18 @@ import { RemainingCollections } from './styles';
 
 export function HomepageCollectionsGrid({ collections }) {
   const saleCollection = collections?.find(
-    collection => collection.title === 'SALE'
+    collection => collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MjMzMDU1Nw=='
   );
   const remainingCollections = collections?.filter(
-    collection => collection.title !== 'SALE'
+    collection => collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTgxNzg1MTA2OQ=='
+    || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MTIxNjQ0NQ=='
+    || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MjUyNzE2NQ=='
   );
+  console.log(remainingCollections);
 
   return (
     <div>
+      
       {!!saleCollection && (
         <CollectionTile
           sale
@@ -31,7 +35,7 @@ export function HomepageCollectionsGrid({ collections }) {
             )}`}
             title={collection.title}
             description={collection.description}
-            backgroundImage={collection.image.localFile.childImageSharp.fluid}
+            backgroundImage={collection.image?.localFile.childImageSharp.fluid}
             key={collection.shopifyId}
           />
         ))}

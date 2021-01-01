@@ -26,6 +26,7 @@ const query = graphql`
             ...ShopifyProductFields
             ...ProductTileFields
           }
+          id
           title
           description
           shopifyId

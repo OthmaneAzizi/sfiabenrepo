@@ -12,6 +12,7 @@ export function CollectionTile({
   destination,
   description,
   title,
+  id,
   backgroundImage,
   sale,
 }) {
