@@ -22,7 +22,7 @@ export function ImageGallery({ selectedVariantImageId, images }) {
     <ImageGalleryWrapper>
       <div>
 
-        <Image fluid={activeImageThumbnail.localFile?.childImageSharp.fluid} />
+       
 
         <Image fluid={activeImageThumbnail?.localFile?.childImageSharp?.fluid} />
 
