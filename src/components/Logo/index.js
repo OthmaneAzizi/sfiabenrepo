@@ -14,5 +14,5 @@ export function Logo() {
       }
     }
   `);
-  return <Img fixed={data.file.childImageSharp.fixed} />;
+  return <Img fixed={data?.file?.childImageSharp?.fixed} />;
 }
