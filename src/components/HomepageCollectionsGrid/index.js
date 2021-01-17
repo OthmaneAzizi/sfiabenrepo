@@ -5,12 +5,12 @@ import { RemainingCollections } from './styles';
 export function HomepageCollectionsGrid({ collections }) {
   const saleCollection = collections?.find(
 
-    collection => collection.title === 'SALE'
+    collection => collection.title === 'Soldes'
   );
   const remainingCollections = collections?.filter(
-    collection => collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTgxNzg1MTA2OQ=='
-    || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MTIxNjQ0NQ=='
-    || collection.id === 'Shopify__Collection__Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzIzOTc4MjUyNzE2NQ=='
+    collection => collection.title === 'Oreiller de massage'
+    || collection.title === 'Pistolet de massage'
+    
    
 
   );

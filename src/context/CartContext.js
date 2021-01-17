@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Client from 'shopify-buy';
 
 const client = Client.buildClient({
-  domain: `${process.env.GATSBY_SHOP_NAME}.myshopify.com`,
+  domain: `pay.the-spice-house.com`,
   storefrontAccessToken: process.env.GATSBY_ACCESS_TOKEN,
 });
 
