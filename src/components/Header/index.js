@@ -13,7 +13,7 @@ export function Header() {
           <Logo />
         </Link>
       </div>
-      <Search />
+ 
       <Cart />
     </HeaderWrapper>
   );
