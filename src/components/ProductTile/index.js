@@ -14,7 +14,7 @@ export function ProductTile({
     <ProductTileWrapper>
       <Img fluid={imageFluid} />
       <Title>{title}</Title>
-      <Description>{description}</Description>
+      
       <Price>from €{parseFloat(minPrice).toFixed(2)}</Price>
       <StyledLink to={`/products/${handle}`}>View product</StyledLink>
     </ProductTileWrapper>
