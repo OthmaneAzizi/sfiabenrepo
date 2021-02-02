@@ -7,4 +7,6 @@ export const HeaderWrapper = styled.header`
   padding: 10px 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
+ 
+  width: 100%
 `;
